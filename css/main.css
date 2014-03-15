@@ -1,0 +1,227 @@
+/*
+ * This file contains all styles that are applied to the app, organized
+ * in sections.
+ */
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+* {
+  font-family: 'PT Sans';
+}
+
+/* Prevent the text contents of draggable elements from being selectable. */
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+/* ==========================================================================
+   Navigation bar
+   ========================================================================== */
+
+nav {
+  background-color: #ca3b3a;
+  color: rgba(255,255,255,0.7);
+  height: 20px;
+  padding: 5px 10px;
+}
+
+nav .logo {
+  float: left;
+}
+
+nav .project-name {
+  float: right;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+  background-color: #d7d7d7;
+  color: rgb(58, 50, 50);
+  font-family: 'PT Serif';
+  font-size: 50px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Main content
+   ========================================================================== */
+
+#class-map {
+  display: -webkit-flex;
+  display: flex;
+  padding: 0px 15px 0 15px;
+}
+
+#people {
+  height: 500px;
+  width: 355px;
+  padding-top: 15px;
+  padding-left: 5px;
+}
+
+.person {
+  background-color: #D44545;
+  border: 3px solid white;
+  color: white;
+  cursor: move;
+  display: -webkit-flex;
+  display: inline-flex;
+  float: left;
+  font-size: 11px;
+  height: 35px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 55px;
+}
+
+.person.seated {
+  opacity: 0.1;
+  cursor: default;
+}
+
+#places {
+  -webkit-flex: 1;
+          flex: 1;
+  border-left: 1px dotted #ACAAAA;
+  border-bottom: 1px dotted #ACAAAA;
+  position: relative;
+}
+
+.place {
+  background-color: #EBDAD4;
+  border: 3px solid #CECECE;
+  color: black;
+  cursor: move;
+  display: -webkit-flex;
+  display: inline-flex;
+  float: left;
+  font-size: 15px;
+  height: 55px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 55px;
+}
+
+.places-row {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.places-column {
+  float:left;
+}
+
+.places-column:last-child {
+  margin-left: 25px;
+}
+
+.person.over,
+.place.over {
+  background-color: rgb(160, 131, 158);
+}
+
+.person span,
+.place span {
+  cursor: help;
+  margin: auto;
+}
+
+.blackboard {
+  background-color: rgb(58, 50, 50);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.places-counter {
+  font-size: 40px;
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+  color: #423030;
+}
+
+/* ==========================================================================
+   Modal with person information
+   ========================================================================== */
+
+#modal {
+  background: #000;
+  background: rgba(0, 0, 0, 0.85);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.centered-wrapper {
+  background: #3453A2;
+  border: solid 5px #1A1A6D;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  padding: 20px;
+}
+
+.absolute-centered.is-variable {
+  display: table;
+  height: auto;
+}
+.absolute-centered.is-fixed {
+  position: fixed;
+  z-index: 999;
+}
+
+.absolute-centered {
+  bottom: 0;
+  height: 40%;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+.about h4 {
+  font-size: 30px;
+  margin: 13px;
+}
+
+.about .info {
+  padding: 5px;
+}
+
+.about .hide {
+  cursor: pointer;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 10px;
+}
