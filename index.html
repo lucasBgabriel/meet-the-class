@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Meet the class -- Infosimples</title>
+
+  <link href="http://necolas.github.io/normalize.css/3.0.0/normalize.css" rel="stylesheet">
+
+  <!-- Fonts from Google Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+  <!-- App styles -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <span class="logo">infosimples</span>
+    <span class="project-name">Práticas de Desenvolvimento de Software</span>
+  </nav>
+
+  <header>
+    Meet the class
+  </header>
+  <div id="class-map">
+    <!-- Container for people without places. This container will be populated
+         dynamically via JavaScript. See the JS files for more info. -->
+    <div id="people" class="bla">
+    </div>
+
+    <div id="places">
+      <div class="blackboard">
+        <span>blackboard</span>
+      </div>
+
+      <!-- Begin places rows. There is a total of 3 rows, with 10 places
+          each. -->
+      <div class="places-row">
+        <div style="display: inline-block;">
+          <div class="places-column">
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+          </div>
+          <div class="places-column">
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+          </div>
+        </div>
+      </div>
+      <div class="places-row">
+        <div style="display: inline-block;">
+          <div class="places-column">
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+          </div>
+          <div class="places-column">
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+          </div>
+        </div>
+      </div>
+      <div class="places-row">
+        <div style="display: inline-block;">
+          <div class="places-column">
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+          </div>
+          <div class="places-column">
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+            <div class="place" draggable="true"></div>
+          </div>
+        </div>
+      </div>
+      <!-- End places rows -->
+
+      <div class="places-counter">
+        Empty places left: <span class="empty-places-count">?</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal with detailed person information -->
+  <div id="modal" class="about">
+    <div class="centered-wrapper absolute-centered is-fixed is-variable" id="Fixed-Modal">
+      <div class="centered-content">
+        <img src="http://www.gravatar.com/avatar/">
+        <h4></h4>
+        <div class="info course"></div>
+        <div class="info birthday"></div>
+        <div class="info about-person"></div>
+        <div class="hide">
+          close
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript files. -->
+  <!-- They are placed at the bottom so the page loads faster. -->
+
+  <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- TODO: use Modernizr to detect Drag and Drop features -->
+
+  </body>
+</html>
