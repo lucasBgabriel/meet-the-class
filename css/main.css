@@ -225,3 +225,15 @@ header {
   font-style: italic;
   margin-top: 10px;
 }
+
+/* ==========================================================================
+   Course styles
+   ========================================================================== */
+
+.person.michelet {
+  background-color: black;
+}
+
+.person.semestral {
+  background-color: #3453A2;
+}

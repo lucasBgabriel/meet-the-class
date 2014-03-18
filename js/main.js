@@ -154,6 +154,14 @@ $(function() {
 [].forEach.call(people, function(person) {
   person_element = $('<div class="person" draggable="true"><span>' + person.first_name + '</span></div>');
   person_element.find('span').data('who', person);
+
+  if (person.full_name && person.full_name.match(/Michelet/i)) {
+    person_element.addClass('michelet');
+  }
+  else if (person.course && person.course.match(/Semestral/i)) {
+    person_element.addClass('semestral');
+  }
+
   $('#people').append(person_element);
 });
 
