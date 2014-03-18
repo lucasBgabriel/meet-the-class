@@ -349,7 +349,13 @@ function handleDrop(e) {
   }
 
   // Updates the empty places count.
-  $('.empty-places-count')[0].innerHTML = $('.person:not(.seated)').length;
+  var unseated = $('.person:not(.seated)').length;
+  if (unseated == 0) {
+    $('.places-counter')[0].innerHTML = "Congratz! You finished!";
+  }
+  else {
+    $('.empty-places-count')[0].innerHTML = unseated;
+  }
 
   return false;
 }
