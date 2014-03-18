@@ -210,6 +210,11 @@ header {
   text-align: center;
 }
 
+.centered-content img {
+  border: 1px solid white;
+  box-shadow: 0px 0px 3px 1px white;
+}
+
 .about h4 {
   font-size: 30px;
   margin: 13px;
