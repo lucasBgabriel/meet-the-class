@@ -76,10 +76,10 @@ people = [
     full_name: 'João Henrique Kersul Faria',
     first_name: 'João Henrique'
   },
-  
+
   {
     full_name: 'Lucas Batista Gabriel',
-    first_name: 'Lucas'
+    first_name: 'Lucas',
     course: 'Curso Cooperativo',
     birthday: '15/02/1992',
     about: 'Hello world =D',
