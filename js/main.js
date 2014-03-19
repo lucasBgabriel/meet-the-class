@@ -76,10 +76,16 @@ people = [
     full_name: 'João Henrique Kersul Faria',
     first_name: 'João Henrique'
   },
+  
   {
     full_name: 'Lucas Batista Gabriel',
     first_name: 'Lucas'
+    course: 'Curso Cooperativo',
+    birthday: '15/02/1992',
+    about: 'Hello world =D',
+    picture: 'c714c560b07954d6b41c263656f6085e'
   },
+
   {
     full_name: 'Luiz Fernando Pessoa Lustosa Cabral',
     first_name: 'Luiz'
